@@ -1,0 +1,42 @@
+// Colors
+$ocean: #2B7AF1;
+$white: #ffffff;
+$black: #111111;
+$gradient: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+
+// Fonts
+@mixin manrope {
+	font-family: 'Manrope-Regular';
+	font-weight: 400;
+	font-style: normal;
+}
+@mixin extrabold {
+	font-family: 'Montserrat-ExtraBold';
+	font-weight: 800;
+	font-style: normal;
+}
+@mixin regular {
+	font-family: 'Montserrat-Regular';
+	font-weight: 400;
+	font-style: normal;
+}
+@mixin semibold {
+	font-family: 'Montserrat-SemiBold';
+	font-weight: 600;
+	font-style: normal;
+}
+@mixin opensans {
+	font-family: 'OpenSans-Regular';
+	font-weight: 400;
+	font-style: normal;
+}
+@mixin bold {
+	font-family: 'Montserrat-Bold';
+	font-weight: 700;
+	font-style: normal;
+}
+@mixin medium {
+	font-family: 'Montserrat-Medium';
+	font-weight: 500;
+	font-style: normal;
+}

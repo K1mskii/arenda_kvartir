@@ -1,0 +1,49 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+      max-width: 1100px;
+      padding: 0 16px;
+      transition: 0.3s ease 0s;
+  }
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 850px;
+        padding: 0 16px;
+        transition: 0.3s ease 0s;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: none;
+        padding: 0 16px;
+        transition: 0.3s ease 0s;
+    }
+}
+
+.btn {
+    padding: 15px 30px;
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+    box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+    border-radius: 25px;
+    font-family: 'Montserrat-SemiBold';
+	font-weight: 600;
+	font-style: normal;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Montserrat-ExtraBold';
+	font-weight: 800;
+	font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2B7AF1;
+}

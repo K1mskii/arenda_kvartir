@@ -1,0 +1,62 @@
+.about__wrapper {
+    position: relative;
+    padding-top: 113px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #ffffff, #ee8002, #ee8002, #ffffff ) 47% 0%;
+}
+.about__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about__text {
+    max-width: 433px;
+    margin: 0 auto 0 0;
+}
+.about__desc {
+    @include opensans;
+    font-size: 18px;
+    line-height: 25px;
+    color: $black;
+}
+.about__block {
+    margin-left: 100px;
+    width: calc(100% - 533px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about__item {
+    display: flex;
+    align-items: center;
+}
+.about__icon {
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 80px;
+    height: 80px;
+}
+.about__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__numbers {
+    margin-bottom: 10px;
+    @include extrabold;
+    font-size: 36px;
+    line-height: 44px;
+    color: $ocean;
+}
+.about__name {
+    @include manrope;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+}
