@@ -4,22 +4,15 @@
     padding: 0 80px;
     width: 100%;
 }
-
-@media only screen and (max-width: 1200px) {
-  .container {
-      max-width: 1100px;
-      padding: 0 16px;
-      transition: 0.3s ease 0s;
-  }
-}
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1400px) {
     .container {
-        max-width: 850px;
+        max-width: 1200px;
         padding: 0 16px;
         transition: 0.3s ease 0s;
     }
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 992px) {
     .container {
         max-width: none;
         padding: 0 16px;

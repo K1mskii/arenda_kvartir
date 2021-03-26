@@ -44,12 +44,12 @@
     bottom: -110px;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
 }
 .hero__item {
     padding: 40px 20px 20px 20px;
-    width: 305px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -57,9 +57,6 @@
     background-color: $white;
     border-radius: 10px;
     filter: drop-shadow(0px 5px 20px rgba(17, 17, 17, 0.3));
-}
-.hero__item:not(:last-child) {
-    margin-right: 10px;
 }
 .hero__icon {
     width: 80px;
@@ -108,8 +105,10 @@
     .hero {
         background: linear-gradient(to right, $white 50%, $ocean 50%);
     }
+    .hero__list {
+        grid-gap: 10px;
+    }
     .hero__item {
-        width: 235px;
         padding: 20px 39px 40px 39px;
     }
     .hero__icon {
@@ -127,29 +126,71 @@
         height: 257px;
     }
     .hero__item {
-        margin-right: 10px;
-        width: 177px;
         padding: 20px 10px 40px 10px;
-    }
-    .header__btn {
-        margin-left: 0;
-    }
-    .header__item:first-child {
-        margin-right: 0;
     }
     .hero__list {
         bottom: -10%;
-    }
-    .header__info {
-        flex-direction: row-reverse;
-    }
-    .header__item:first-child {
-        display: block;
-    }
-    .header__item span {
-        display: none;
+    }   
+}
+@media only screen and (max-width: 730px) {
+    .hero__list {
+        bottom: -35%;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-.apartments, .about, .contacts, .testimonials, .feedback {
+@media only screen and (max-width: 660px) {
+    .hero__wrapper {
+        padding-top: 80px;
+    }
+    .hero__info {
+        width: 100%;
+        position: absolute;
+        bottom: 42%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 5;
+        margin: 0 auto;
+    }
+    .hero__img {
+        position: relative;
+        width: 100%;
+    }
+    .hero__cover {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px 0px 0px 10px;
+    }
+    .hero__title {
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+    }
+    .hero__desc {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: $white;
+    }
+}  
+@media only screen and (max-width: 578px) {
+    .hero__list {
+        bottom: -40%;
+    }
+}
+
+@media only screen and (max-width: 453px) {
+    .hero__list {
+        bottom: -45%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .hero__list {
+        bottom: -97%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.about, .contacts, .testimonials, .feedback {
     display: none;
 }
