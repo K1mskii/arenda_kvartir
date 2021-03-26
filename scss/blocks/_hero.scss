@@ -101,6 +101,11 @@
         background: linear-gradient(to left, $ocean 60%,#ffffff 40%,#ffffff 40%);
     }
 }
+@media only screen and (max-width: 1000px) {
+    .hero__wrapper {
+        padding-bottom: 150px;
+    }
+}
 @media only screen and (max-width: 992px) {
     .hero {
         background: linear-gradient(to right, $white 50%, $ocean 50%);
@@ -129,18 +134,21 @@
         padding: 20px 10px 40px 10px;
     }
     .hero__list {
-        bottom: -10%;
+        bottom: -15%;
     }   
 }
 @media only screen and (max-width: 730px) {
     .hero__list {
-        bottom: -35%;
+        bottom: -45%;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media only screen and (max-width: 660px) {
     .hero__wrapper {
-        padding-top: 80px;
+        padding-top: 90px;
+    }
+    .hero__list {
+        bottom: -53%;
     }
     .hero__info {
         width: 100%;
@@ -176,19 +184,29 @@
 }  
 @media only screen and (max-width: 578px) {
     .hero__list {
-        bottom: -40%;
+        bottom: -55%;
     }
 }
 
 @media only screen and (max-width: 453px) {
     .hero__list {
-        bottom: -45%;
+        bottom: -60%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .hero__name {
+        font-size: 12px;
+        line-height: 16px;
     }
 }
 @media only screen and (max-width: 320px) {
     .hero__list {
-        bottom: -97%;
+        bottom: -115%;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .hero__btn.btn {
+        margin-top: 20px;
+        padding: 5px 10px;
     }
 }
 .about, .contacts, .testimonials, .feedback {
