@@ -8,9 +8,7 @@
 .about__list {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 .about__text {
     max-width: 433px;
@@ -28,7 +26,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 .about__item {
     display: flex;
@@ -59,4 +56,94 @@
     font-size: 18px;
     line-height: 26px;
     color: $black;
+}
+
+@media only screen and (max-width: 1180px) {
+    .about__wrapper {
+        padding-top: 60px;
+    }
+    .about__desc {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .about__icon {
+        width: 50px;
+        height: 50px;
+    }
+    .about__numbers {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .about__name {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    
+}
+
+@media only screen and (max-width: 1030px) {
+    .about__block {
+        margin-left: 50px;
+        width: 100%;
+    }
+    .about__desc {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .about__numbers {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .about__name {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .about__desc {
+        max-width: none;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media only screen and (max-width: 905px) {
+    .about__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .about__list {
+        flex-direction: column;
+    }
+    .about__text {
+        max-width: none;
+    }
+    .about__desc {
+
+    }
+    .about__block {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .about__desc {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .about__numbers {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .about__name {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .about__block {
+        flex-wrap: wrap;
+    }
+    .about__item {
+        margin-bottom: 20px;
+    }
 }

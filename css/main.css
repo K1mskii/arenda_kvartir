@@ -750,7 +750,7 @@ body._lock {
   }
 }
 
-.about, .contacts, .testimonials, .feedback {
+.contacts, .testimonials, .feedback {
   display: none;
 }
 
@@ -944,6 +944,9 @@ body._lock {
     -ms-grid-column-span: 2;
     grid-column: 3 / 5;
   }
+  .apartments__more.btn {
+    padding: 10px;
+  }
 }
 
 @media only screen and (max-width: 875px) {
@@ -992,9 +995,6 @@ body._lock {
   }
   .apartments__block {
     margin-top: 20px;
-  }
-  .apartments__more.btn {
-    padding: 10px;
   }
 }
 
@@ -1050,14 +1050,9 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .about__text {
@@ -1086,8 +1081,6 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .about__item {
@@ -1138,6 +1131,99 @@ body._lock {
   font-size: 18px;
   line-height: 26px;
   color: #111111;
+}
+
+@media only screen and (max-width: 1180px) {
+  .about__wrapper {
+    padding-top: 60px;
+  }
+  .about__desc {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .about__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .about__numbers {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .about__name {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .about__block {
+    margin-left: 50px;
+    width: 100%;
+  }
+  .about__desc {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .about__numbers {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .about__name {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .about__desc {
+    max-width: none;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width: 905px) {
+  .about__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__text {
+    max-width: none;
+  }
+  .about__block {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .about__desc {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .about__numbers {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .about__name {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .about__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__item {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__wrapper {

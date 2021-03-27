@@ -128,6 +128,9 @@
             grid-column: 3 / 5;
         }
     }
+    .apartments__more.btn {
+        padding: 10px;
+    }
 }
 @media only screen and (max-width: 875px) {
     .apartments__cover {
@@ -173,9 +176,6 @@
     }
     .apartments__block{
         margin-top: 20px;
-    }
-    .apartments__more.btn {
-        padding: 10px;
     }
 }
 @media only screen and (max-width: 578px) {
