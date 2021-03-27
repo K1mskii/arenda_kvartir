@@ -1,54 +1,105 @@
 .feedback {
-    position: relative;
+    
 }
 .feedback__wrapper {
+    position: relative;
     padding-top: 100px;
     padding-bottom: 40px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 }
 .feedback__form {
-    padding: 40px 52px;
-    max-width: 393px;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 85px;
+    left: 106px;
+    padding: 40px 52px;
+    text-align: center;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: $white;
     border-radius: 10px;
-    border: 1px solid #eee;
-    text-align: center;
     filter: drop-shadow(0px 5px 20px rgba(17, 17, 17, 0.3));
 }
 .feedback__title {
     margin-bottom: 24px;
 }
-.feedback__item {
-    max-width: 313px;
-    margin: 0 auto 15px auto;
-}
 .feedback__input {
-    padding: 10px 20px;
+    margin-bottom: 15px;
+    padding: 7px 15px;
+    text-align: left;
     width: 100%;
-    border: 1px solid rgba(17, 17, 17, 0.5);
-    border-radius: 10px;
     @include opensans;
     font-size: 16px;
     line-height: 22px;
-    color: rgba(17, 17, 17, 0.5);
+    color: $black;
+    border-radius: 10px;
+    border: 1px solid rgba(17,17,17,.5);
+    &::placeholder {
+        @include opensans;
+        font-size: 16px;
+        line-height: 22px;
+        color: $black;
+    }
 }
 .feedback__textarea {
+    box-sizing: border-box;
+    resize: none;
+    padding: 7px 15px;
+    text-align: left;
+    width: 100%;
+    height: 115px;
+    @include opensans;
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+    border-radius: 10px;
+    border: 1px solid rgba(17,17,17,.5);
+    &::placeholder {
+        @include opensans;
+        font-size: 16px;
+        line-height: 22px;
+        color: $black;
+    }
 }
 .feedback__submit {
+    margin-top: 24px;
+    padding: 15px 30px;
+    border: none;
+    width: 152px;
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+    box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+    border-radius: 25px;
+    @include semibold;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    cursor: pointer;
 }
+
 .feedback__block {
+    
+    position: relative;
     max-width: 703px;
     margin: 40px 0 0 auto;
+    &::after {
+        content: '';
+        background-image: url(../img/quote-small.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        top: -56px;
+        left: -35px;
+        z-index: 1;
+        width: 70px;
+        height: 70px;
+    }
 }
 .feedback__text {
+    z-index: 2;
     @include opensans;
     font-size: 18px;
     line-height: 140%;
@@ -65,4 +116,91 @@
     font-size: 16px;
     line-height: 26px;
     color: $black;
+}
+
+@media only screen and (max-width: 1410px) {
+    .feedback__form {
+        left: 0;
+    }
+}
+@media only screen and (max-width: 1180px) {
+    .feedback__block {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .feedback__block {
+        max-width: 500px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .feedback__block {
+        max-width: 600px;
+    }
+    .feedback__form {
+        padding: 30px 20px;
+    }
+    .feedback__text {
+        font-size: 14px;
+        line-height: 140%;
+    }
+    .feedback__name {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .feedback__rank {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+@media only screen and (max-width: 925px) {
+    .feedback__block {
+        max-width: 500px;
+    }
+}
+@media only screen and (max-width: 830px) {
+    .feedback__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .feedback__form {
+        margin-top: 20px;
+        width: 100%;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        top: auto;
+        right: auto;
+    }
+    .feedback__block::after {
+        left: 0;
+    }
+    .feedback__block {
+        width: 100%;
+        max-width: none;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .feedback__wrapper {
+        padding-top: 60px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .feedback__input, .feedback__textarea {
+        font-size: 14px;
+        line-height: 17px;
+        &::placeholder {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    .feedback__submit {
+        padding: 5px 10px;
+        font-size: 14px;
+        line-height: 17px;
+    }   
 }

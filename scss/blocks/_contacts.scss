@@ -83,6 +83,7 @@
 @media only screen and (max-width: 650px) {
     .contacts__wrapper {
         padding-top: 60px;
+        padding-bottom: 60px;
         flex-direction: column;
     }
     .contacts__map {
@@ -91,3 +92,4 @@
         margin-left: 0;
     }
 }
+

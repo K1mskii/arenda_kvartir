@@ -61,6 +61,7 @@ input, button {
 }
 
 input {
+	box-sizing: border-box;
 	width: 0;
 	margin: 0;
 	padding: 0;
