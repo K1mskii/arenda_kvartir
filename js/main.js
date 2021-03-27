@@ -44,48 +44,55 @@ $(function(){
 	$("#hero_phone").mask("+7 (999) 999-99-99");
 });
 
+let flag = 0;
+window.addEventListener('scroll', function() {
+    let scrollY = window.scrollY;
 
-$(document).ready(function() {
-    ymaps.ready(init);
-    var myMap,
-    myPlacemark1,
-    myPlacemark2;
-    function init(){
-        // Создание карты.
-            myMap = new ymaps.Map("map", {
-            center: [59.40725602805697,56.806888306671105],
-            zoom: 14
-        });
+    let mapOffset = document.querySelector("#map").offsetTop;
+    
+    if ((scrollY >= mapOffset - 500) && (flag == 0)) {
+        ymaps.ready(init);
+        var myMap,
+        myPlacemark1,
+        myPlacemark2;
+        function init(){
+            // Создание карты.
+                myMap = new ymaps.Map("map", {
+                center: [59.40725602805697,56.806888306671105],
+                zoom: 14
+            });
 
-        myPin = new ymaps.GeoObjectCollection({}, {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/mapMark.png',
-            iconImageSize: [50, 50],
-            iconImageOffset: [-30, -50]
-        });
+            myPin = new ymaps.GeoObjectCollection({}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/mapMark.png',
+                iconImageSize: [50, 50],
+                iconImageOffset: [-30, -50]
+            });
 
-        myMap.controls
-            .remove('trafficControl')
-            .remove('geolocationConrol')
-            .remove('searchControl')
-            .remove('typeSelector');
+            myMap.controls
+                .remove('trafficControl')
+                .remove('geolocationConrol')
+                .remove('searchControl')
+                .remove('typeSelector');
 
-        myMap.behaviors.disable([
-        'drag'
-        ]);
+            myMap.behaviors.disable([
+            'drag'
+            ]);
 
-        myPlacemark1 = new ymaps.Placemark([59.4071661874045,56.800613352996315], {
-        balloonContentHeader: 'Филиал №1',
-        balloonContent: 'ул. Пятилетки 29'
-        });
-        myPlacemark2 = new ymaps.Placemark([59.41217615091655,56.8095826599421], {
-        balloonContentHeader: 'Филиал №2',
-        balloonContent: 'ул. Карла Маркса 2'
-        });
-        myPin.add(myPlacemark1).add(myPlacemark2);
-        myMap.geoObjects.add(myPin);
-    };
-});
+            myPlacemark1 = new ymaps.Placemark([59.4071661874045,56.800613352996315], {
+            balloonContentHeader: 'Филиал №1',
+            balloonContent: 'ул. Пятилетки 29'
+            });
+            myPlacemark2 = new ymaps.Placemark([59.41217615091655,56.8095826599421], {
+            balloonContentHeader: 'Филиал №2',
+            balloonContent: 'ул. Карла Маркса 2'
+            });
+            myPin.add(myPlacemark1).add(myPlacemark2);
+            myMap.geoObjects.add(myPin);
+        };
+        flag = 1;
+    }
+})
 
 // Slick slider
 $(function () {
