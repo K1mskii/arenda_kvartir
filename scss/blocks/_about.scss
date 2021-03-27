@@ -139,6 +139,11 @@
         line-height: 16px;
     }
 }
+@media only screen and (max-width: 650px) {
+    .about__wrapper {
+        padding-bottom: 60px;
+    }
+}
 @media only screen and (max-width: 430px) {
     .about__block {
         flex-wrap: wrap;
