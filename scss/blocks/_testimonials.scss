@@ -131,14 +131,71 @@
 }
 
 .testimonials .prev-arrow {
-    left: -20px;
+    left: -10px;
 }
 .testimonials .next-arrow {
-    right: -20px;
+    right: -10px;
 }
 
 @media (max-width: 1100px) {
-    .testimonials .testimonials__item{
+    .testimonials .testimonials__item {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .testimonials__wrapper::before {
+        width: 120px;
+        height: 120px;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .testimonials__wrapper {
+        padding: 60px 0;
+    }
+    .testimonials__wrapper::before {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .testimonials__subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .testimonials__star {
+        width: 15px;
+        font-size: 20px;
+    }
+    .testimonials__desc {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .testimonials__name {
+        font-size: 10px;
+        line-height: 130%;
+    }
+    .testimonials__city {
+        font-size: 8px;
+        line-height: 130%;
+    }
+    .testimonials__date {
+        font-size: 8px;
+        line-height: 10px;
+    }
+    #slider .slick-dots {
+        margin-top: 20px;
+    }
+    #slider .slick-dots button {
+        width: 5px;
+        height: 10px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .testimonials__wrapper::before {
+        width: 30px;
+        height: 30px;
     }
 }

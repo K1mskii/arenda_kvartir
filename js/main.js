@@ -103,7 +103,7 @@ $(function () {
         nextArrow: $(".next-arrow"),
         responsive: [
         {
-            breakpoint: 1100,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
