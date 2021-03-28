@@ -1411,6 +1411,8 @@ body._lock {
 }
 
 .testimonials__list {
+  margin-left: -15px;
+  margin-right: -15px;
   margin-top: 40px;
 }
 
@@ -1532,16 +1534,16 @@ body._lock {
 }
 
 #slider .slick-slide {
-  margin-right: 20px;
+  padding: 40px;
 }
 
-#slider .slick-list {
-  margin-right: -20px;
+#slider .slick-slide {
+  margin: 0 10px;
 }
 
 .testimonials__arrow {
   position: absolute;
-  top: 46%;
+  top: 45%;
   z-index: 10;
   font-size: 0;
   padding: 10px;
