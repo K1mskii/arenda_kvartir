@@ -121,3 +121,9 @@ $(function () {
         ],
     });
 });
+
+$(document).ready(function() {
+    const myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+});

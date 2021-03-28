@@ -207,11 +207,12 @@ body._lock {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 999;
 }
 
 .header__wrapper {
   padding-top: 30px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,6 +317,12 @@ body._lock {
   margin-left: 25px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .menu__list > .menu__item {
+    margin: 0px 20px 0px 10px;
+  }
+}
+
 @media (min-width: 767px) {
   .menu__list {
     display: -webkit-box;
@@ -405,9 +412,11 @@ body._lock {
   }
   .menu__nav._active {
     right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .menu__nav::before {
-    padding-top: 80px;
+    padding: 50px 0;
     content: '';
     position: absolute;
     width: 100%;
@@ -426,13 +435,15 @@ body._lock {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .menu__list > .menu__item {
+  .menu__nav._active .menu__list > .menu__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    letter-spacing: 1px;
+    margin: 20px auto 0px 0px;
   }
   .menu__link {
     font-size: 18px;
@@ -441,19 +452,19 @@ body._lock {
   }
 }
 
-@media only screen and (max-width: 1400px) {
-  .menu__list > .menu__item {
-    margin: 0 0 0 30px;
-  }
-}
-
 @media only screen and (max-width: 992px) {
+  .menu__nav::before {
+    padding: 45px 0;
+  }
   .header__item:first-child {
     display: none;
   }
   .header__logo--img {
     width: 87px;
     height: 50px;
+  }
+  .menu__nav._active .menu__list > .menu__item {
+    margin: 20px auto 0px 0px;
   }
 }
 
@@ -481,18 +492,22 @@ body._lock {
 @media only screen and (max-width: 660px) {
   .header__wrapper {
     padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .menu__nav::before {
+    padding: 40px 0;
   }
   .header__btn {
     display: none;
   }
-  .menu__list > .menu__item {
-    margin: 20px 0 0 -10px;
+  .header__logo {
+    margin-left: 20px;
   }
 }
 
-@media only screen and (max-width: 375px) {
-  .header__logo {
-    margin-left: 10px;
+@media only screen and (max-width: 315px) {
+  .header__info {
+    display: none;
   }
 }
 
@@ -544,7 +559,6 @@ body._lock {
 .hero__img {
   width: 895px;
   height: 473px;
-  background-image: url("../img/bg.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -751,6 +765,13 @@ body._lock {
   .hero__btn.btn {
     margin-top: 20px;
     padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 315px) {
+  .hero {
+    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #ffffff), color-stop(40%, #2B7AF1));
+    background: linear-gradient(to right, #ffffff 60%, #2B7AF1 40%);
   }
 }
 
@@ -1589,10 +1610,6 @@ body._lock {
   }
   #slider .slick-dots {
     margin-top: 20px;
-  }
-  #slider .slick-dots button {
-    width: 5px;
-    height: 10px;
   }
 }
 

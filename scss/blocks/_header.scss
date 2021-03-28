@@ -8,10 +8,11 @@ body._lock {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 999;
 }
 .header__wrapper {
     padding-top: 30px;
+    padding-bottom: 30px;
     // min-height: 70px;
     display: flex;
     align-items: center;
@@ -80,6 +81,12 @@ body._lock {
 }
 .header__btn {
     margin-left: 25px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .menu__list > .menu__item {
+        margin: 0px 20px 0px 10px;
+    }
 }
 
 @media (min-width: 767px) {
@@ -160,9 +167,11 @@ body._lock {
     }
     .menu__nav._active {
         right: 0;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .menu__nav::before {
-        padding-top: 80px;
+        padding: 50px 0;
         content: '';
         position: absolute;
         width: 100%;
@@ -176,9 +185,11 @@ body._lock {
         align-items: flex-start;
         flex-direction: column;
     }
-    .menu__list > .menu__item {
+    .menu__nav._active .menu__list > .menu__item {
         flex-direction: column;
         flex-wrap: wrap;
+        letter-spacing: 1px;
+        margin: 20px auto 0px 0px;
     }
     .menu__link {
         font-size: 18px;
@@ -187,19 +198,19 @@ body._lock {
     }
 }
 
-@media only screen and (max-width: 1400px) {
-    .menu__list > .menu__item {
-        margin: 0 0 0 30px;
-    }
-}
-
 @media only screen and (max-width: 992px) {
+    .menu__nav::before {
+        padding: 45px 0;
+    }
     .header__item:first-child {
         display: none;
     }
     .header__logo--img {
         width: 87px;
         height: 50px;
+    }
+    .menu__nav._active .menu__list > .menu__item {
+        margin: 20px auto 0px 0px;
     }
 }
 @media only screen and (max-width: 830px) {
@@ -222,16 +233,21 @@ body._lock {
 @media only screen and (max-width: 660px) {
     .header__wrapper {
         padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .menu__nav::before {
+        padding: 40px 0;
     }
     .header__btn {
         display: none;
     }
-    .menu__list > .menu__item {
-        margin: 20px 0 0 -10px;
+    .header__logo {
+        margin-left: 20px;
     }
 }
-@media only screen and (max-width: 375px) {
-    .header__logo {
-        margin-left: 10px;
+
+@media only screen and (max-width: 315px) {
+    .header__info {
+        display: none;
     }
 }

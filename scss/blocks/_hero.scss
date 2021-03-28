@@ -32,7 +32,6 @@
 .hero__img {
     width: 895px;
     height: 473px;
-    background-image: url("../img/bg.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -208,5 +207,11 @@
     .hero__btn.btn {
         margin-top: 20px;
         padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .hero {
+        background: linear-gradient(to right, $white 60%, $ocean 40%);
     }
 }
