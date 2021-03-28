@@ -240,6 +240,11 @@ body._lock {
   height: 44px;
 }
 
+.header__logo--img {
+  width: 136px;
+  height: 54px;
+}
+
 .menu__icon {
   display: none;
 }
@@ -1998,6 +2003,11 @@ body._lock {
 
 .footer__logo {
   margin-right: 40px;
+}
+
+.footer__logo--img {
+  width: 136px;
+  height: 54px;
 }
 
 .footer__list {
