@@ -245,8 +245,8 @@ body._lock {
 }
 
 .menu__list > .menu__item {
+  margin: 0 40px 0 0px;
   position: relative;
-  margin: 0 0 0 40px;
 }
 
 .menu__link {
@@ -257,22 +257,6 @@ body._lock {
   font-size: 16px;
   line-height: 20px;
   display: inline-block;
-}
-
-.menu__link::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 3px;
-  background-color: #111111;
-  -webkit-transition: width .3s;
-  transition: width .3s;
-}
-
-.menu__link:hover::after {
-  width: 100%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
 }
 
 .header__info {
@@ -325,6 +309,8 @@ body._lock {
 
 @media (min-width: 767px) {
   .menu__list {
+    margin-left: 40px;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -332,12 +318,25 @@ body._lock {
         -ms-flex-align: center;
             align-items: center;
   }
+  .menu__line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #111111;
+    -webkit-transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+  }
   .menu__list > .menu__item {
     padding: 10px 0;
   }
 }
 
 @media (max-width: 1325px) {
+  .menu__list .menu__line {
+    display: none;
+  }
   .header__left {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;

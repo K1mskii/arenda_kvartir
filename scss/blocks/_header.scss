@@ -32,8 +32,8 @@ body._lock {
     display: none;
 }
 .menu__list > .menu__item {
+    margin: 0 40px 0 0px;
     position: relative;
-    margin: 0 0 0 40px;
 }
 .menu__link {
     @include semibold;
@@ -41,18 +41,6 @@ body._lock {
     font-size: 16px;
     line-height: 20px;
     display: inline-block;
-}
-.menu__link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    background-color: $black;
-    transition: width .3s;
-}
-.menu__link:hover::after {
-    width: 100%;
-    transition: width .3s;
 }
 
 // Right position
@@ -91,8 +79,19 @@ body._lock {
 
 @media (min-width: 767px) {
     .menu__list {
+        margin-left: 40px;
+        position: relative;
         display: flex;
         align-items: center;
+    }
+    .menu__line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 3px;
+        background-color: $black;
+        transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
     }
     .menu__list > .menu__item {
         padding: 10px 0;
@@ -100,6 +99,9 @@ body._lock {
 }
 
 @media (max-width: 1325px) {
+    .menu__list .menu__line {
+        display: none;
+    }
     .header__left {
         flex-direction: row-reverse;
     }
