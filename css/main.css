@@ -1551,6 +1551,11 @@ body._lock {
   border-radius: 50%;
 }
 
+.arrow__icon {
+  width: 11px;
+  height: 21px;
+}
+
 .testimonials .prev-arrow {
   left: -10px;
 }
@@ -1594,6 +1599,15 @@ body._lock {
   }
   .testimonials__star:not(:last-child) {
     margin-right: 5px;
+  }
+  .testimonials__arrow {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  .arrow__icon {
+    width: 12px;
+    height: 15px;
   }
   .testimonials__desc {
     font-size: 12px;
