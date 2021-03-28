@@ -167,6 +167,9 @@
     .testimonials__star {
         width: 15px;
         font-size: 20px;
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
     }
     .testimonials__desc {
         font-size: 12px;

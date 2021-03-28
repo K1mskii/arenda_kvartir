@@ -1592,6 +1592,9 @@ body._lock {
     width: 15px;
     font-size: 20px;
   }
+  .testimonials__star:not(:last-child) {
+    margin-right: 5px;
+  }
   .testimonials__desc {
     font-size: 12px;
     line-height: 16px;
