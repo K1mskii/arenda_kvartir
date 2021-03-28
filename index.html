@@ -51,7 +51,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="header__btn btn">Заказать звонок</div>
+                    <div class="header__btn btn" data-modal-btn="my_modal">Заказать звонок</div>
                 </div>
             </div>
         </div>
@@ -483,6 +483,26 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="modal" data-modal-window="my_modal">
+        <div class="modal__content">
+            <div class="modal__wrapper">
+                <div class="modal__close">
+                    <svg width="22" height="22" class="modal__icon">
+                        <use xlink:href="img/icons.svg#close"></use>
+                    </svg>
+                </div>
+                <form action="#" class="modal__form">
+                    <h2 class="modal__title title">Заказать звонок</h2>
+                    <p class="modal__desc">Оставьте заявку и мы свяжемся с Вами в ближайшее время!</p>
+                    <input type="text" placeholder="Имя" class="modal__form-input" required>
+                    <input type="text" placeholder="Телефон" class="modal__form-input" id="modal_phone" required>
+                    <input type="submit" class="modal__form-submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Jquery -->
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <!-- LazyLoad -->
