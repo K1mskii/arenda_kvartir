@@ -3,6 +3,8 @@
 @import 'rules/globals';
 @import 'rules/vars';
 
+@import '../libs/aos/aos';
+
 @import 'blocks/header';
 @import 'blocks/hero';
 @import 'blocks/apartments';

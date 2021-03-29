@@ -56,6 +56,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
+
+
+$(function () {
+    AOS.init({
+        disable: 'phone'
+    });
+});
+
+    
+
 // Input mask
 $(function(){
 	$("#hero_phone").mask("+7 (999) 999-99-99");
