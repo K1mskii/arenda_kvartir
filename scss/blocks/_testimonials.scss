@@ -96,17 +96,19 @@
 #slider .slick-dots li.slick-active button {
     background: $gradient;
     width: 20px;
-    border-radius: 100px;
+    border-radius: 50px;
     border: none;
 }
 #slider .slick-dots button {
+    display: inline-block;
     margin: 0 8px;
     font-size: 0;
     width: 10px;
     height: 10px;
-    border-radius: 100%;
+    border-radius: 10px;
     border: 1px solid #dedede;
-    background: none;
+    background-color: #ff7a00;
+    transition: all 0.2s ease;
 }
 
 // Отступы
@@ -136,10 +138,10 @@
     height: 21px;
 }
 .testimonials .prev-arrow {
-    left: -10px;
+    left: -15px;
 }
 .testimonials .next-arrow {
-    right: -10px;
+    right: -15px;
 }
 
 @media (max-width: 1100px) {

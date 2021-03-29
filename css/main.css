@@ -1538,18 +1538,21 @@ body._lock {
 #slider .slick-dots li.slick-active button {
   background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
   width: 20px;
-  border-radius: 100px;
+  border-radius: 50px;
   border: none;
 }
 
 #slider .slick-dots button {
+  display: inline-block;
   margin: 0 8px;
   font-size: 0;
   width: 10px;
   height: 10px;
-  border-radius: 100%;
+  border-radius: 10px;
   border: 1px solid #dedede;
-  background: none;
+  background-color: #ff7a00;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 #slider .slick-slide {
@@ -1578,11 +1581,11 @@ body._lock {
 }
 
 .testimonials .prev-arrow {
-  left: -10px;
+  left: -15px;
 }
 
 .testimonials .next-arrow {
-  right: -10px;
+  right: -15px;
 }
 
 @media (max-width: 1100px) {
