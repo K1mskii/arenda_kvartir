@@ -1,0 +1,205 @@
+.aparts__wrapper {
+    padding-top: 150px;
+}
+.aparts__list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 40px;
+}
+.aparts__photo {
+    width: 395px;
+    height: 267px;
+    filter: drop-shadow(0px 10px 20px rgba(17, 17, 17, 0.1));
+    border-radius: 10px;
+    object-fit: cover;
+}
+.aparts__info {
+    margin-top: 20px;
+}
+.aparts__name {
+    @include bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black;
+}
+.aparts__desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+.aparts__price {
+    @include bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $ocean;
+}
+.aparts__address {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.aparts__icon {
+    margin-right: 10px;
+}
+.aparts__location {
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+}
+.aparts__btn {
+    padding: 12px 42px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1400px) {
+    .aparts__list {
+        margin-top: 30px;
+        gap: 50px 30px;
+    }
+    .aparts__photo {
+        width: 280px;
+        height: 190px;
+    }
+    .aparts__name {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .aparts__info {
+        max-width: 280px;
+        margin-right: auto;
+    }
+    .aparts__desc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .aparts__price {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .aparts__info {
+        margin-top: 10px;
+    }
+    .aparts__icon {
+        margin-right: 5px;
+    }
+    .aparts__location {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .aparts__btn {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .aparts__wrapper {
+        padding-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .aparts__list {
+        gap: 50px 15px;
+    }
+    .aparts__photo {
+        width: 234px;
+        height: 158px;
+    }
+    .aparts__info {
+        max-width: 234px;
+        margin-right: auto;
+    }
+    .aparts__desc {
+        margin-bottom: 5px;
+    }
+    .aparts__btn {
+        padding: 8px 25px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .aparts__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
+    .aparts__photo {
+        width: 300px;
+        height: 160px;
+    }
+    .aparts__name {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .aparts__info {
+        max-width: 300px;
+        margin-right: auto;
+    }
+    .aparts__desc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .aparts__price {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .aparts__info {
+        margin-top: 10px;
+    }
+    .aparts__icon {
+        margin-right: 5px;
+    }
+    .aparts__location {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .aparts__btn {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .aparts__wrapper {
+        padding-top: 100px;
+    }
+    .aparts__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px 15px;
+    }
+    .aparts__photo {
+        width: 100%;
+        height: 250px;
+    }
+    .aparts__name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .aparts__info {
+        max-width: none;
+    }
+    .aparts__desc {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .aparts__price {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .aparts__location {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .aparts__btn {
+        padding: 8px 20px;
+    }
+}

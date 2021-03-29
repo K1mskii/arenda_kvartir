@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="libs/slick/slick.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header apart_header">
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__left">
-                    <a href="./index.html" class="header__logo">
+                    <a href="./apart.html" class="header__logo">
                         <img src="img/logo.svg" alt="Аренда квартир 59" class="header__logo--img">
                     </a>
                     <div class="header__menu menu">
@@ -25,8 +25,8 @@
                         <nav class="menu__nav">
                             <ul class="menu__list">
                                 <span class="menu__line"></span>
-                                <li class="menu__item"><a data-goto="" href="#" class="menu__link">Главная</a></li>
-                                <li class="menu__item"><a data-goto=".apartments" href="#" class="menu__link">Квартиры</a></li>
+                                <li class="menu__item"><a data-goto="" href="./index.html" class="menu__link">Главная</a></li>
+                                <li class="menu__item"><a data-goto=".aparts" href="#" class="menu__link">Квартиры</a></li>
                                 <li class="menu__item"><a data-goto=".contacts" href="#" class="menu__link">Контакты</a></li>
                                 <li class="menu__item"><a data-goto=".about" href="#" class="menu__link">О нас</a></li>
                             </ul>
@@ -58,143 +58,134 @@
         </div>
     </header>
     <main class="main">
-
         <!-- 1st section -->
-        <section class="hero">
+        <section class="aparts">
             <div class="container">
-                <div class="hero__wrapper">
-                    <div class="hero__info">
-                        <h1 class="hero__title">Аренда квартир в Березниках</h1>
-                        <p class="hero__desc">На длительный срок или посуточно</p>
-                        <a href="apart.html" class="hero__btn btn">Смотреть варианты</a>
-                    </div>
-                    <div class="hero__img" style="background-image: url(img/bg.jpg);">
-                        <div class="hero__cover"></div>
-                    </div>
-                    <div class="hero__list">
-                        <div class="hero__item">
-                            <div class="hero__icon" style="background-image: url(img/services/documents.svg);"></div>
-                            <h4 class="hero__name">Заключаем договоры, предоставляет отчётные документы</h4>
+                <div class="aparts__wrapper">
+                    <h2 class="aparts__title title">Наши квартиры</h2>
+                    <div class="aparts__list">
+                        <!-- 1 -->
+                        <div class="aparts__item">
+                            <img src="img/apart/1.jpg" alt="Квартира" class="aparts__photo">
+                            <div class="aparts__info">
+                                <h4 class="aparts__name">Однокомнатная квартира</h4>
+                                <p class="aparts__desc">СДАМ 1- ую квартиру улучшенной планировки с лоджией, есть всё необходимое спальные места кровать 2...</p>
+                                <span class="aparts__price">1 200 ₽ за сутки </span>
+                                <div class="aparts__address">
+                                    <svg width="16" height="20" class="aparts__icon">
+                                        <use xlink:href="img/icons.svg#location"></use>
+                                    </svg>
+                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
+                                </div>
+                                <a href="#" class="aparts__btn btn">Подробнее</a>
+                            </div>
                         </div>
-                        <div class="hero__item">
-                            <div class="hero__icon" style="background-image: url(img/services/money.svg);"></div>
-                            <h4 class="hero__name">Наличный и безналичный расчёт</h4>
+                        <!-- 2 -->
+                        <div class="aparts__item">
+                            <img src="img/apart/2.jpg" alt="Квартира" class="aparts__photo">
+                            <div class="aparts__info">
+                                <h4 class="aparts__name">Однокомнатная квартира</h4>
+                                <p class="aparts__desc">СДАМ 1 КВАРТИРУ есть все необходимое для проживания холодильник, мик.печь,ст.машина выписываем...</p>
+                                <span class="aparts__price">1 000 ₽ за сутки </span>
+                                <div class="aparts__address">
+                                    <svg width="16" height="20" class="aparts__icon">
+                                        <use xlink:href="img/icons.svg#location"></use>
+                                    </svg>
+                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
+                                </div>
+                                <a href="#" class="aparts__btn btn">Подробнее</a>
+                            </div>
                         </div>
-                        <div class="hero__item">
-                            <div class="hero__icon" style="background-image: url(img/services/time.svg);"></div>
-                            <h4 class="hero__name">Бронирование и заселение круглосуточно</h4>
+                        <!-- 3 -->
+                        <div class="aparts__item">
+                            <img src="img/apart/3.jpg" alt="Квартира" class="aparts__photo">
+                            <div class="aparts__info">
+                                <h4 class="aparts__name">Однокомнатная квартира</h4>
+                                <p class="aparts__desc">Сдам 1ую квартиру ул. пл. с балконом
+                                    есть всё необходимое для проживания Выписываем документы строгой...
+                                </p>
+                                <span class="aparts__price">1 000 ₽ за сутки </span>
+                                <div class="aparts__address">
+                                    <svg width="16" height="20" class="aparts__icon">
+                                        <use xlink:href="img/icons.svg#location"></use>
+                                    </svg>
+                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
+                                </div>
+                                <a href="#" class="aparts__btn btn">Подробнее</a>
+                            </div>
                         </div>
-                        <div class="hero__item">
-                            <div class="hero__icon" style="background-image: url(img/services/confidentiality.svg);"></div>
-                            <h4 class="hero__name">Полная конфиденциальность</h4>
+                        <!-- 4-->
+                        <div class="aparts__item">
+                            <img src="img/apart/4.jpg" alt="Квартира" class="aparts__photo">
+                            <div class="aparts__info">
+                                <h4 class="aparts__name">Однокомнатная квартира</h4>
+                                <p class="aparts__desc">Сдам 1- квартиру с балконом есть всё необходимое для проживания выписываю ДОКУМЕНТЫ ЧЕК ОНЛАЙН 25+звонить...
+                                </p>
+                                <span class="aparts__price">1 200 ₽ за сутки </span>
+                                <div class="aparts__address">
+                                    <svg width="16" height="20" class="aparts__icon">
+                                        <use xlink:href="img/icons.svg#location"></use>
+                                    </svg>
+                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
+                                </div>
+                                <a href="#" class="aparts__btn btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 5-->
+                        <div class="aparts__item">
+                            <img src="img/apart/5.jpg" alt="Квартира" class="aparts__photo">
+                            <div class="aparts__info">
+                                <h4 class="aparts__name">Двухкомнатная квартира</h4>
+                                <p class="aparts__desc">СДАМ 2 КОМНАТНУЮ КВАРТИРУ есть балкон всё необходимое для комфортного проживания, холодильник, мик.печь...
+                                </p>
+                                <span class="aparts__price">1 500 ₽ за сутки </span>
+                                <div class="aparts__address">
+                                    <svg width="16" height="20" class="aparts__icon">
+                                        <use xlink:href="img/icons.svg#location"></use>
+                                    </svg>
+                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
+                                </div>
+                                <a href="#" class="aparts__btn btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 6-->
+                        <div class="aparts__item">
+                            <img src="img/apart/6.jpg" alt="Квартира" class="aparts__photo">
+                            <div class="aparts__info">
+                                <h4 class="aparts__name">Трёхкомнатная квартира</h4>
+                                <p class="aparts__desc">СДАМ 3 КОМНАТНУЮ КВАРТИРУ гостям города , бригаде , есть всё необходимое для проживания до 7 ми спальных мест...
+                                </p>
+                                <span class="aparts__price">1 800 ₽ за сутки </span>
+                                <div class="aparts__address">
+                                    <svg width="16" height="20" class="aparts__icon">
+                                        <use xlink:href="img/icons.svg#location"></use>
+                                    </svg>
+                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
+                                </div>
+                                <a href="#" class="aparts__btn btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 7-->
+                        <div class="aparts__item">
+                            <img src="img/apart/7.jpg" alt="Квартира" class="aparts__photo">
+                            <div class="aparts__info">
+                                <h4 class="aparts__name">Трёхкомнатная квартира</h4>
+                                <p class="aparts__desc">СДАМ. 3 КОМНАТНУЮ КВАРТИРУ, для гостей города. в квартире имеется все необходимое для проживания на сутки...
+                                </p>
+                                <span class="aparts__price">1 800 ₽ за сутки </span>
+                                <div class="aparts__address">
+                                    <svg width="16" height="20" class="aparts__icon">
+                                        <use xlink:href="img/icons.svg#location"></use>
+                                    </svg>
+                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
+                                </div>
+                                <a href="#" class="aparts__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- 2nd section -->
-        <section class="apartments">
-            <div class="container">
-                <div class="apartments__wrapper">
-                    <h2 class="apartments__title title">Наши квартиры</h2>
-                    <div class="apartments__list">
-                        <div class="apartments__item" style="background-image: url(img/apartments/1.jpg);">
-                            <div class="apartments__cover">
-                                <ul class="apartments__info">
-                                    <li class="apartments__name">1-ая квартира</li>
-                                    <li class="apartments__about">
-                                        Сутки: <span>1 500 ₽</span>
-                                    </li>
-                                    <li class="apartments__about">
-                                        Месяц: <span>8 000 ₽</span>
-                                    </li>
-                                </ul>
-                                <div class="apartments__row">
-                                    <div class="apartments__address">
-                                        <svg width="16" height="20" class="apartments__icon">
-                                            <use xlink:href="img/icons.svg#location"></use>
-                                        </svg>
-                                        <a href="#" class="apartments__location">Березники, ул. Юбилейная 108</a>
-                                    </div>
-                                    <a href="./apart.html" class="apartments__btn btn">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="apartments__item" style="background-image: url(img/apartments/3.jpg);">
-                            <div class="apartments__cover">
-                                <ul class="apartments__info">
-                                    <li class="apartments__name">3-ая квартира</li>
-                                    <li class="apartments__about">
-                                        Сутки: <span>1 300 ₽</span>
-                                    </li>
-                                    <li class="apartments__about">
-                                        Месяц: <span>10 000 ₽</span>
-                                    </li>
-                                </ul>
-                                <div class="apartments__row">
-                                    <div class="apartments__address">
-                                        <svg width="16" height="20" class="apartments__icon">
-                                            <use xlink:href="img/icons.svg#location"></use>
-                                        </svg>
-                                        <a href="#" class="apartments__location">Березники, ул. Гагарина 89</a>
-                                    </div>
-                                    <a href="./apart.html" class="apartments__btn btn">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="apartments__item" style="background-image: url(img/apartments/2.jpg);">
-                            <div class="apartments__cover">
-                                <ul class="apartments__info">
-                                    <li class="apartments__name">2-ая квартира</li>
-                                    <li class="apartments__about">
-                                        Сутки: <span>1 700 ₽</span>
-                                    </li>
-                                    <li class="apartments__about">
-                                        Месяц: <span>20 000 ₽</span>
-                                    </li>
-                                </ul>
-                                <div class="apartments__row">
-                                    <div class="apartments__address">
-                                        <svg width="16" height="20" class="apartments__icon">
-                                            <use xlink:href="img/icons.svg#location"></use>
-                                        </svg>
-                                        <a href="#" class="apartments__location">Березники, ул. Власова 14</a>
-                                    </div>
-                                    <a href="./apart.html" class="apartments__btn btn">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="apartments__item" style="background-image: url(img/apartments/5.jpg);">
-                            <div class="apartments__cover">
-                                <ul class="apartments__info">
-                                    <li class="apartments__name">5-ая квартира</li>
-                                    <li class="apartments__about">
-                                        Сутки: <span>4 100 ₽</span>
-                                    </li>
-                                    <li class="apartments__about">
-                                        Месяц: <span>11 500 ₽</span>
-                                    </li>
-                                </ul>
-                                <div class="apartments__row">
-                                    <div class="apartments__address">
-                                        <svg width="16" height="20" class="apartments__icon">
-                                            <use xlink:href="img/icons.svg#location"></use>
-                                        </svg>
-                                        <a href="#" class="apartments__location">Березники, ул. Шмидта 10</a>
-                                    </div>
-                                    <a href="./apart.html" class="apartments__btn btn">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="apartments__block">
-                            <a href="./apart.html" class="apartments__more btn">Смотреть все квартиры</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- 3rd section -->
         <section class="about">
             <div class="container">
@@ -419,12 +410,12 @@
         <div class="footer__overlay">
             <div class="container">
                 <div class="footer__wrapper">
-                    <a href="./index.html" class="footer__logo">
+                    <a href="./apart.html" class="footer__logo">
                         <img src="img/logo.svg" alt="Аренда квартир 59" class="footer__logo--img">
                     </a>
                     <ul class="footer__list">
-                        <li class="footer__item"><a data-goto="" href="#" class="footer__link">Главная</a></li>
-                        <li class="footer__item"><a data-goto=".apartments" href="#" class="footer__link">Квартиры</a></li>
+                        <li class="footer__item"><a data-goto="" href="./index.html" class="footer__link">Главная</a></li>
+                        <li class="footer__item"><a data-goto=".aparts" href="#" class="footer__link">Квартиры</a></li>
                         <li class="footer__item"><a data-goto=".contacts" href="#" class="footer__link">Контакты</a></li>
                         <li class="footer__item"><a data-goto=".about" href="#" class="footer__link">О нас</a></li>
                     </ul>

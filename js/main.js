@@ -10,7 +10,7 @@ if(iconMenu) {
 }
 
 // Прокрутка при клике
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+const menuLinks = document.querySelectorAll('.menu__link[data-goto], .footer__link[data-goto]');
 if(menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener("click", onMenuLinkClick);
@@ -20,7 +20,7 @@ if(menuLinks.length > 0) {
         const menuLink = e.target;
         if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
-            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header, footer').offsetHeight;
 
             // Закрытие меню при клике X
             if(iconMenu.classList.contains('_active')) {

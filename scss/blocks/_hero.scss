@@ -27,6 +27,7 @@
 }
 .hero__btn {
     margin-top: 60px;
+    display: inline-block;
 }
 
 .hero__img {
@@ -85,7 +86,7 @@
 }
 
 @media only screen and (max-width: 1400px) {
-    .hero {
+    .hero, .apart_header {
         background: linear-gradient(to left, $ocean 55%,#ffffff 45%,#ffffff 45%);
     }
 }
@@ -109,7 +110,7 @@
     }
 }
 @media only screen and (max-width: 1080px) {
-    .hero {
+    .hero, .apart_header  {
         background: linear-gradient(to left, $ocean 60%,#ffffff 40%,#ffffff 40%);
     }
 }
@@ -119,7 +120,7 @@
     }
 }
 @media only screen and (max-width: 992px) {
-    .hero {
+    .hero, .apart_header  {
         background: linear-gradient(to right, $white 50%, $ocean 50%);
     }
     .hero__list {
@@ -223,7 +224,7 @@
 }
 
 @media only screen and (max-width: 315px) {
-    .hero {
+    .hero, .apart_header  {
         background: linear-gradient(to right, $white 60%, $ocean 40%);
     }
 }

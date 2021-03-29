@@ -10,6 +10,10 @@ body._lock {
     width: 100%;
     z-index: 999;
 }
+.apart_header {
+    position: fixed;
+    background: linear-gradient(to right, $white 50%, $ocean 50%);
+}
 .header__wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -102,7 +106,7 @@ body._lock {
     }
 }
 
-@media (max-width: 1325px) {
+@media (max-width: 1400px) {
     .menu__list .menu__line {
         display: none;
     }
