@@ -71,87 +71,59 @@ $(function(){
 	$("#hero_phone").mask("+7 (999) 999-99-99");
 });
 
-// let flag = 0;
-// window.addEventListener('scroll', function() {
-//     let scrollY = window.scrollY;
 
-//     let mapOffset = document.querySelector("#map").offsetTop;
-    
-//     if ((scrollY >= mapOffset - 500) && (flag == 0)) {
-//         ymaps.ready(init);
-//         var myMap,
-//         myPlacemark1,
-//         myPlacemark2;
-//         function init(){
-//             // Создание карты.
-//                 myMap = new ymaps.Map("map", {
-//                 center: [59.40725602805697,56.806888306671105],
-//                 zoom: 14
-//             });
+$(document).ready(function() {
+    let flag = 0;
+    window.addEventListener('scroll', function() {
+        let scrollY = window.scrollY;
 
-//             myPin = new ymaps.GeoObjectCollection({}, {
-//                 iconLayout: 'default#image',
-//                 iconImageHref: 'img/mapMark.png',
-//                 iconImageSize: [50, 50],
-//                 iconImageOffset: [-30, -50]
-//             });
+        let mapOffset = document.querySelector("#map").offsetTop;
+        
+        if ((scrollY >= mapOffset - 500) && (flag == 0)) {
+            ymaps.ready(init);
+            var myMap,
+            myPlacemark1,
+            myPlacemark2;
+            function init(){
+                // Создание карты.
+                    myMap = new ymaps.Map("map", {
+                    center: [59.40725602805697,56.806888306671105],
+                    zoom: 14
+                });
 
-//             myMap.controls
-//                 .remove('trafficControl')
-//                 .remove('geolocationConrol')
-//                 .remove('searchControl')
-//                 .remove('typeSelector');
+                myPin = new ymaps.GeoObjectCollection({}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'img/mapMark.png',
+                    iconImageSize: [50, 50],
+                    iconImageOffset: [-30, -50]
+                });
 
-//             myMap.behaviors.disable([
-//             'drag'
-//             ]);
+                myMap.controls
+                    .remove('trafficControl')
+                    .remove('geolocationConrol')
+                    .remove('searchControl')
+                    .remove('typeSelector');
 
-//             myPlacemark1 = new ymaps.Placemark([59.4071661874045,56.800613352996315], {
-//             balloonContentHeader: 'Филиал №1',
-//             balloonContent: 'ул. Пятилетки 29'
-//             });
-//             myPlacemark2 = new ymaps.Placemark([59.41217615091655,56.8095826599421], {
-//             balloonContentHeader: 'Филиал №2',
-//             balloonContent: 'ул. Карла Маркса 2'
-//             });
-//             myPin.add(myPlacemark1).add(myPlacemark2);
-//             myMap.geoObjects.add(myPin);
-//         };
-//         flag = 1;
-//     }
-// })
+                myMap.behaviors.disable([
+                'drag'
+                ]);
 
-let flag = 0;
+                myPlacemark1 = new ymaps.Placemark([59.4071661874045,56.800613352996315], {
+                balloonContentHeader: 'Филиал №1',
+                balloonContent: 'ул. Пятилетки 29'
+                });
+                myPlacemark2 = new ymaps.Placemark([59.41217615091655,56.8095826599421], {
+                balloonContentHeader: 'Филиал №2',
+                balloonContent: 'ул. Карла Маркса 2'
+                });
+                myPin.add(myPlacemark1).add(myPlacemark2);
+                myMap.geoObjects.add(myPin);
+            };
+            flag = 1;
+        }
+    })
+});
 
-		window.addEventListener('scroll', function(){
-			let scrollY = window.scrollY;
-			// console.log(scrollY)
-
-			let mapOffset = document.querySelector("#map").offsetTop;
-			console.log(mapOffset)
-
-			if ((scrollY >= mapOffset - 500) && (flag == 0)) {
-					// Функция ymaps.ready() будет вызвана, когда
-					// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-					ymaps.ready(init);
-
-					function init() {
-					// Создание карты.
-					var myMap = new ymaps.Map("map", {
-					// Координаты центра карты.
-					// Порядок по умолчанию: «широта, долгота».
-					// Чтобы не определять координаты центра карты вручную,
-					// воспользуйтесь инструментом Определение координат.
-					center: [55.76, 37.64],
-					// Уровень масштабирования. Допустимые значения:
-					// от 0 (весь мир) до 19.
-					zoom: 7
-					});
-				}
-
-				flag = 1;
-			}
-		});
 
 // Slick slider
 $(function () {
