@@ -46,15 +46,6 @@
     display: flex;
     align-items: center;
 }
-.testimonials__star {
-    width: 25px;
-    text-align: center;
-    font-size: 30px;
-}
-.testimonials__star::after {
-    content: '★';
-    color: #FCC226;
-}
 
 .testimonials__desc {
     margin-top: 22px;

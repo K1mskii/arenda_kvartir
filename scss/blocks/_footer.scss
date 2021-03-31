@@ -48,20 +48,20 @@
     display: flex;
     align-items: center;
 }
-.footer__social--item {
+.footer__social_item {
     display: flex;
     align-items: center;
     &:not(:last-child) {
         margin-right: 20px;
     }
 }
-.footer__social:last-child .footer__social--item {
+.footer__social:last-child .footer__social_item {
     margin-right: 10px;
 }
 .footer__social:last-child .footer__icon{
     margin-right: 0;
 }
-.footer__social--link {
+.footer__social_item__link {
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -151,7 +151,7 @@
         width: 15px;
         height: 15px;
     }
-    .footer__social:last-child .footer__social--item {
+    .footer__social:last-child .footer__social_item {
         margin-right: 2px;
     }
 }

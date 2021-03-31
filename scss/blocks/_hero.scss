@@ -63,11 +63,8 @@
         transition: 0.3s ease 0s;
     }
     &:hover .hero__name {
+        transition: 0.3s ease 0s;
         color: $white;
-    }
-    &:hover.hero__icon {
-        fill: $white;
-        stroke: $white;
     }
 }
 

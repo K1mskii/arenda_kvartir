@@ -27,6 +27,7 @@ body._lock {
     align-items: center;
 }
 .header__logo {
+    margin-right: 40px;
     position: relative;
     z-index: 5;
     width: 144px;
@@ -49,6 +50,9 @@ body._lock {
     font-size: 16px;
     line-height: 20px;
     display: inline-block;
+}
+.header__menu .menu__icon {
+    background: none;
 }
 
 // Right position
@@ -86,9 +90,10 @@ body._lock {
 }
 
 @media (min-width: 767px) {
-    .menu__list {
-        margin-left: 40px;
+    .menu__nav {
         position: relative;
+    }
+    .menu__list {
         display: flex;
         align-items: center;
     }
@@ -107,6 +112,9 @@ body._lock {
 }
 
 @media (max-width: 1400px) {
+    .header__logo {
+        margin-right: 0;
+    }
     .menu__list .menu__line {
         display: none;
     }

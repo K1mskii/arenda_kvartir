@@ -19,12 +19,12 @@
                         <img src="img/logo.svg" alt="Аренда квартир 59" class="header__logo--img">
                     </a>
                     <div class="header__menu menu">
-                        <div class="menu__icon">
+                        <button class="menu__icon">
                             <span></span>
-                        </div>
+                        </button>
                         <nav class="menu__nav">
+                            <span class="menu__line"></span>
                             <ul class="menu__list">
-                                <span class="menu__line"></span>
                                 <li class="menu__item"><a data-goto="" href="#" class="menu__link">Главная</a></li>
                                 <li class="menu__item"><a data-goto=".apartments" href="#" class="menu__link">Квартиры</a></li>
                                 <li class="menu__item"><a data-goto=".contacts" href="#" class="menu__link">Контакты</a></li>
@@ -74,19 +74,19 @@
                     <div class="hero__list" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="hero__item">
                             <div class="hero__icon" style="background-image: url(img/services/documents.svg);"></div>
-                            <h4 class="hero__name">Заключаем договоры, предоставляет отчётные документы</h4>
+                            <h2 class="hero__name">Заключаем договоры, предоставляет отчётные документы</h2>
                         </div>
                         <div class="hero__item">
                             <div class="hero__icon" style="background-image: url(img/services/money.svg);"></div>
-                            <h4 class="hero__name">Наличный и безналичный расчёт</h4>
+                            <h2 class="hero__name">Наличный и безналичный расчёт</h2>
                         </div>
                         <div class="hero__item">
                             <div class="hero__icon" style="background-image: url(img/services/time.svg);"></div>
-                            <h4 class="hero__name">Бронирование и заселение круглосуточно</h4>
+                            <h2 class="hero__name">Бронирование и заселение круглосуточно</h2>
                         </div>
                         <div class="hero__item">
                             <div class="hero__icon" style="background-image: url(img/services/confidentiality.svg);"></div>
-                            <h4 class="hero__name">Полная конфиденциальность</h4>
+                            <h2 class="hero__name">Полная конфиденциальность</h2>
                         </div>
                     </div>
                 </div>
@@ -101,8 +101,8 @@
                     <div class="apartments__list">
                         <div class="apartments__item" style="background-image: url(img/apartments/1.jpg);">
                             <div class="apartments__cover">
+                                <h3 class="apartments__name">1-ая квартира</h3>
                                 <ul class="apartments__info">
-                                    <li class="apartments__name">1-ая квартира</li>
                                     <li class="apartments__about">
                                         Сутки: <span>1 500 ₽</span>
                                     </li>
@@ -123,8 +123,8 @@
                         </div>
                         <div class="apartments__item" style="background-image: url(img/apartments/3.jpg);">
                             <div class="apartments__cover">
+                                <h3 class="apartments__name">3-ая квартира</h3>
                                 <ul class="apartments__info">
-                                    <li class="apartments__name">3-ая квартира</li>
                                     <li class="apartments__about">
                                         Сутки: <span>1 300 ₽</span>
                                     </li>
@@ -145,8 +145,8 @@
                         </div>
                         <div class="apartments__item" style="background-image: url(img/apartments/2.jpg);">
                             <div class="apartments__cover">
+                                <h3 class="apartments__name">2-ая квартира</h3>
                                 <ul class="apartments__info">
-                                    <li class="apartments__name">2-ая квартира</li>
                                     <li class="apartments__about">
                                         Сутки: <span>1 700 ₽</span>
                                     </li>
@@ -167,8 +167,8 @@
                         </div>
                         <div class="apartments__item" style="background-image: url(img/apartments/5.jpg);">
                             <div class="apartments__cover">
+                                <h3 class="apartments__name">5-ая квартира</h3>
                                 <ul class="apartments__info">
-                                    <li class="apartments__name">5-ая квартира</li>
                                     <li class="apartments__about">
                                         Сутки: <span>4 100 ₽</span>
                                     </li>
@@ -200,7 +200,7 @@
             <div class="container">
                 <div class="about__wrapper">
                     <h2 class="about__title title">О нас</h2>
-                    <div class="about__list">
+                    <div class="about__container">
                         <div class="about__text">
                             <p class="about__desc">Сегодня «Домашняя гостиница» — одна из крупнейших в Пермском крае гостиничных сетей, динамично расширяющая географический охват и повышающая качество сервиса.</p>
                         </div>
@@ -280,8 +280,8 @@
                                 </li>
                             </ul>
                             <div class="contacts__follow">
-                                <button class="contacts__btn btn">Подписаться</button>
-                                <button class="contacts__btn btn">Подписаться</button>
+                                <a href="#" class="contacts__btn btn">Подписаться</a>
+                                <a href="#" class="contacts__btn btn">Подписаться</a>
                             </div>
                         </div>
                     </div>
@@ -307,83 +307,127 @@
                         <!-- Slide1 -->
                         <div class="testimonials__item">
                             <div class="testimonials__row">
-                                <h4 class="testimonials__subtitle">Уютная квартира</h4>
+                                <h3 class="testimonials__subtitle">Уютная квартира</h3>
                                 <div class="testimonials__rating">
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
+                                    <svg width="20" height="19" class="testimonials__star" aria-label="Рейтинг 5 из 5">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <p class="testimonials__desc">Первый раз отдыхали в Березниках, времени было мало соответственно жильё искали заранее. Залог вносили с опасением, и очень рады что они были напрасными. Всё супер. Нам понравилось!</p>
                             <div class="testimonials__row">
                                 <div class="testimonials__block">
-                                    <h6 class="testimonials__name">Екатерина Трушникова</h6>
+                                    <div class="testimonials__name">Екатерина Трушникова</div>
                                     <span class="testimonials__city">г. Пермь</span>
                                 </div>
-                                <span class="testimonials__date">2 января 2021</span>
+                                <time datetime="2021--01-02 12:00" class="testimonials__date">
+                                    2 января 2021
+                                </time>
                             </div>
                         </div>
                         <!-- Slide2 -->
                         <div class="testimonials__item">
                             <div class="testimonials__row">
-                                <h4 class="testimonials__subtitle">Клёвый вид на город</h4>
+                                <h3 class="testimonials__subtitle">Клёвый вид на город</h3>
                                 <div class="testimonials__rating">
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
+                                    <svg width="20" height="19" class="testimonials__star" aria-label="Рейтинг 4 из 5">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <p class="testimonials__desc">Хочу поблагодарить за квартиру на ул. Юбилейной, д. 108. Удобное месторасположение, совсем рядом с центром. Квартира уютная, соседей не слышно, мы прекрасно отдохнули. Все что нужно для приготовления еды есть.</p>
                             <div class="testimonials__row">
                                 <div class="testimonials__block">
-                                    <h6 class="testimonials__name">Иван Огородников</h6>
+                                    <div class="testimonials__name">Иван Огородников</div>
                                     <span class="testimonials__city">г. Краснокамск</span>
                                 </div>
-                                <span class="testimonials__date">15 сентября 2019</span>
+                                <time datetime="2019--09-15 12:00" class="testimonials__date">
+                                    15 сентября 2019
+                                </time>
                             </div>
                         </div>
                         <!-- Slide1 -->
                         <div class="testimonials__item">
                             <div class="testimonials__row">
-                                <h4 class="testimonials__subtitle">Адекватная цена</h4>
+                                <h3 class="testimonials__subtitle">Адекватная цена</h3>
                                 <div class="testimonials__rating">
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
+                                    <svg width="20" height="19" class="testimonials__star" aria-label="Рейтинг 5 из 5">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <p class="testimonials__desc">Первый раз отдыхали в Березниках, времени было мало соответственно жильё искали заранее. Залог вносили с опасением, и очень рады что они были напрасными. Всё супер. Нам понравилось!</p>
                             <div class="testimonials__row">
                                 <div class="testimonials__block">
-                                    <h6 class="testimonials__name">Игорь Демидов</h6>
+                                    <div class="testimonials__name">Игорь Демидов</div>
                                     <span class="testimonials__city">г. Краснодар</span>
                                 </div>
-                                <span class="testimonials__date">22 января 2021</span>
+                                <time datetime="2021--01-22 12:00" class="testimonials__date">
+                                    22 января 2021
+                                </time>
                             </div>
                         </div>
                         <!-- Slide2 -->
                         <div class="testimonials__item">
                             <div class="testimonials__row">
-                                <h4 class="testimonials__subtitle">Вежливый персонал</h4>
+                                <h3 class="testimonials__subtitle">Вежливый персонал</h3>
                                 <div class="testimonials__rating">
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
-                                    <span class="testimonials__star"></span>
+                                    <svg width="20" height="19" class="testimonials__star" aria-label="Рейтинг 4 из 5">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
+                                    <svg width="20" height="19" class="testimonials__star">
+                                        <use xlink:href="img/icons.svg#star"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <p class="testimonials__desc">Хочу поблагодарить за квартиру на ул. Юбилейной, д. 108. Удобное месторасположение, совсем рядом с центром. Квартира уютная, соседей не слышно, мы прекрасно отдохнули. Все что нужно для приготовления еды есть.</p>
                             <div class="testimonials__row">
                                 <div class="testimonials__block">
-                                    <h6 class="testimonials__name">Олег Бондарев</h6>
+                                    <div class="testimonials__name">Олег Бондарев</div>
                                     <span class="testimonials__city">г. Санкт-Петербург</span>
                                 </div>
-                                <span class="testimonials__date">31 сентября 2020</span>
+                                <time datetime="2020--09-31 12:00" class="testimonials__date">
+                                    31 сентября 2020
+                                </time>
                             </div>
                         </div>
                     </div>
@@ -407,7 +451,7 @@
                             качества обслуживания или просто хочешь оставить свой комментарий, 
                             то заполни форму. Мы обязательно ответим тебе, или опубликуем его на нашем сайте.
                         </p>
-                        <h6 class="feedback__name">Татьяна Вячеславовна</h6>
+                        <div class="feedback__name">Татьяна Вячеславовна</div>
                         <span class="feedback__rank">Директор гостиницы</span>
                     </div>
                 </div>
@@ -429,16 +473,16 @@
                         <li class="footer__item"><a data-goto=".about" href="#" class="footer__link">О нас</a></li>
                     </ul>
                     <ul class="footer__social">
-                        <li class="footer__social--item footer__email">
-                            <a href="mailto:mail@yandex.ru" class="footer__social--link">
+                        <li class="footer__social_item footer__email">
+                            <a href="mailto:mail@yandex.ru" class="footer__social_item__link">
                                 <svg width="20" height="20" class="footer__icon">
                                     <use xlink:href="img/icons.svg#footer_email"></use>
                                 </svg>
                                 <span>mail@yandex.ru</span> 
                             </a>
                         </li>
-                        <li class="footer__social--item footer__phone">
-                            <a href="tel:+79197142500" class="footer__social--link">
+                        <li class="footer__social_item footer__phone">
+                            <a href="tel:+79197142500" class="footer__social_item__link">
                                 <svg width="17" height="17" class="footer__icon">
                                     <use xlink:href="img/icons.svg#footer_phone"></use>
                                 </svg>
@@ -447,29 +491,29 @@
                         </li>
                     </ul>
                     <ul class="footer__social">
-                        <li class="footer__social--item">
-                            <a href="#" class="footer__social--link">
+                        <li class="footer__social_item">
+                            <a href="#" class="footer__social_item__link">
                                 <svg width="20" height="20" class="footer__icon">
                                     <use xlink:href="img/icons.svg#footer_telegram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer__social--item">
-                            <a href="#" class="footer__social--link">
+                        <li class="footer__social_item">
+                            <a href="#" class="footer__social_item__link">
                                 <svg width="20" height="20" class="footer__icon">
                                     <use xlink:href="img/icons.svg#footer_fb"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer__social--item">
-                            <a href="#" class="footer__social--link">
+                        <li class="footer__social_item">
+                            <a href="#" class="footer__social_item__link">
                                 <svg width="20" height="20" class="footer__icon">
                                     <use xlink:href="img/icons.svg#footer_vk"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer__social--item">
-                            <a href="#" class="footer__social--link">
+                        <li class="footer__social_item">
+                            <a href="#" class="footer__social_item__link">
                                 <svg width="20" height="20" class="footer__icon">
                                     <use xlink:href="img/icons.svg#footer_insta"></use>
                                 </svg>
