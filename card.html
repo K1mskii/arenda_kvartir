@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Slick slider -->
     <link rel="stylesheet" href="libs/slick/slick.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header apart_header">
@@ -59,133 +61,83 @@
     </header>
     <main class="main">
         <!-- 1st section -->
-        <section class="aparts">
+        <section class="card">
             <div class="container">
-                <div class="aparts__wrapper">
-                    <h2 class="aparts__title title">Наши квартиры</h2>
-                    <div class="aparts__list" data-aos="fade-in">
-                        <!-- 1 -->
-                        <div class="aparts__item">
-                            <img src="img/apart/1.jpg" alt="Квартира" class="aparts__photo">
-                            <div class="aparts__info">
-                                <h3 class="aparts__name">Однокомнатная квартира</h3>
-                                <p class="aparts__desc">СДАМ 1- ую квартиру улучшенной планировки с лоджией, есть всё необходимое спальные места кровать 2...</p>
-                                <span class="aparts__price">1 200 ₽ за сутки </span>
-                                <div class="aparts__address">
-                                    <svg width="16" height="20" class="aparts__icon">
-                                        <use xlink:href="img/icons.svg#location"></use>
-                                    </svg>
-                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
+                <div class="card__wrapper">
+                    <h2 class="card__title title">1-к квартира, 31 м², 1/5 эт.</h2>
+                    <div class="card__container">
+                        <div class="card-slider">
+                            <div class="card-slider__nav slider-nav">
+                                <div class="slider-nav__item" tabindex="0"><img src="img/card/1.jpg" alt="Фотография"></div>
+                                <div class="slider-nav__item" tabindex="0"><img src="img/card/2.jpg" alt="Фотография"></div>
+                                <div class="slider-nav__item" tabindex="0"><img src="img/card/3.jpg" alt="Фотография"></div>
+                                <div class="slider-nav__item" tabindex="0"><img src="img/card/4.jpg" alt="Фотография"></div>
+                                <div class="slider-nav__item" tabindex="0"><img src="img/card/5.jpg" alt="Фотография"></div>
+                            </div>
+                            <div class="card-slider__block slider-block">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/card/1.jpg" alt="Фотография">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/card/2.jpg" alt="Фотография">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/card/3.jpg" alt="Фотография">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/card/4.jpg" alt="Фотография">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/card/5.jpg" alt="Фотография">
+                                    </div>
                                 </div>
-                                <a href="./card.html" class="aparts__btn btn">Подробнее</a>
                             </div>
                         </div>
-                        <!-- 2 -->
-                        <div class="aparts__item">
-                            <img src="img/apart/2.jpg" alt="Квартира" class="aparts__photo">
-                            <div class="aparts__info">
-                                <h3 class="aparts__name">Однокомнатная квартира</h3>
-                                <p class="aparts__desc">СДАМ 1 КВАРТИРУ есть все необходимое для проживания холодильник, мик.печь,ст.машина выписываем...</p>
-                                <span class="aparts__price">1 000 ₽ за сутки </span>
-                                <div class="aparts__address">
-                                    <svg width="16" height="20" class="aparts__icon">
-                                        <use xlink:href="img/icons.svg#location"></use>
-                                    </svg>
-                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
-                                </div>
-                                <a href="./card.html" class="aparts__btn btn">Подробнее</a>
+                        <div class="card__info">
+                            <h3 class="card__name">Однокомнатная квартира</h3>
+                            <p class="card__desc">Сдам 1- квартиру с балконом есть всё необходимое для проживания выписываю ДОКУМЕНТЫ ЧЕК ОНЛАЙН 25+звонить смс не читаю</p>
+                            <span class="card__price">1 200 ₽ за сутки </span>
+                            <div class="card__address">
+                                <svg width="16" height="20" class="card__icon">
+                                    <use xlink:href="img/icons.svg#location"></use>
+                                </svg>
+                                <a href="#" class="card__location">Березники, ул. Юбилейная 108</a>
                             </div>
+                            <button class="card__btn btn">Забронировать</button>
                         </div>
-                        <!-- 3 -->
-                        <div class="aparts__item">
-                            <img src="img/apart/3.jpg" alt="Квартира" class="aparts__photo">
-                            <div class="aparts__info">
-                                <h3 class="aparts__name">Однокомнатная квартира</h3>
-                                <p class="aparts__desc">Сдам 1ую квартиру ул. пл. с балконом
-                                    есть всё необходимое для проживания Выписываем документы строгой...
-                                </p>
-                                <span class="aparts__price">1 000 ₽ за сутки </span>
-                                <div class="aparts__address">
-                                    <svg width="16" height="20" class="aparts__icon">
-                                        <use xlink:href="img/icons.svg#location"></use>
-                                    </svg>
-                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
-                                </div>
-                                <a href="./card.html" class="aparts__btn btn">Подробнее</a>
-                            </div>
-                        </div>
-                        <!-- 4-->
-                        <div class="aparts__item">
-                            <img src="img/apart/4.jpg" alt="Квартира" class="aparts__photo">
-                            <div class="aparts__info">
-                                <h3 class="aparts__name">Однокомнатная квартира</h3>
-                                <p class="aparts__desc">Сдам 1- квартиру с балконом есть всё необходимое для проживания выписываю ДОКУМЕНТЫ ЧЕК ОНЛАЙН 25+звонить...
-                                </p>
-                                <span class="aparts__price">1 200 ₽ за сутки </span>
-                                <div class="aparts__address">
-                                    <svg width="16" height="20" class="aparts__icon">
-                                        <use xlink:href="img/icons.svg#location"></use>
-                                    </svg>
-                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
-                                </div>
-                                <a href="./card.html" class="aparts__btn btn">Подробнее</a>
-                            </div>
-                        </div>
-                        <!-- 5-->
-                        <div class="aparts__item">
-                            <img src="img/apart/5.jpg" alt="Квартира" class="aparts__photo">
-                            <div class="aparts__info">
-                                <h3 class="aparts__name">Двухкомнатная квартира</h3>
-                                <p class="aparts__desc">СДАМ 2 КОМНАТНУЮ КВАРТИРУ есть балкон всё необходимое для комфортного проживания, холодильник, мик.печь...
-                                </p>
-                                <span class="aparts__price">1 500 ₽ за сутки </span>
-                                <div class="aparts__address">
-                                    <svg width="16" height="20" class="aparts__icon">
-                                        <use xlink:href="img/icons.svg#location"></use>
-                                    </svg>
-                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
-                                </div>
-                                <a href="./card.html" class="aparts__btn btn">Подробнее</a>
-                            </div>
-                        </div>
-                        <!-- 6-->
-                        <div class="aparts__item">
-                            <img src="img/apart/6.jpg" alt="Квартира" class="aparts__photo">
-                            <div class="aparts__info">
-                                <h3 class="aparts__name">Трёхкомнатная квартира</h3>
-                                <p class="aparts__desc">СДАМ 3 КОМНАТНУЮ КВАРТИРУ гостям города , бригаде , есть всё необходимое для проживания до 7 ми спальных мест...
-                                </p>
-                                <span class="aparts__price">1 800 ₽ за сутки </span>
-                                <div class="aparts__address">
-                                    <svg width="16" height="20" class="aparts__icon">
-                                        <use xlink:href="img/icons.svg#location"></use>
-                                    </svg>
-                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
-                                </div>
-                                <a href="./card.html" class="aparts__btn btn">Подробнее</a>
-                            </div>
-                        </div>
-                        <!-- 7-->
-                        <div class="aparts__item">
-                            <img src="img/apart/7.jpg" alt="Квартира" class="aparts__photo">
-                            <div class="aparts__info">
-                                <h3 class="aparts__name">Трёхкомнатная квартира</h3>
-                                <p class="aparts__desc">СДАМ. 3 КОМНАТНУЮ КВАРТИРУ, для гостей города. в квартире имеется все необходимое для проживания на сутки...
-                                </p>
-                                <span class="aparts__price">1 800 ₽ за сутки </span>
-                                <div class="aparts__address">
-                                    <svg width="16" height="20" class="aparts__icon">
-                                        <use xlink:href="img/icons.svg#location"></use>
-                                    </svg>
-                                    <a href="#" class="aparts__location">Березники, ул. Юбилейная 108</a>
-                                </div>
-                                <a href="./card.html" class="aparts__btn btn">Подробнее</a>
-                            </div>
-                        </div>
+                    </div>
+                    <h4 class="card__subtitle">Оснащение:</h4>
+                    <div class="card__block">
+                        <ul class="card__list">
+                            <li class="card__item">Холодильник</li>
+                            <li class="card__item">Стиральная машина</li>
+                            <li class="card__item">СВЧ</li>
+                            <li class="card__item">Телевизор плазма</li>
+                            <li class="card__item">Цифровое телевидение</li>
+                        </ul>
+                        <ul class="card__list">
+                            <li class="card__item">Сушка</li>
+                            <li class="card__item">Домофон</li>
+                            <li class="card__item">Балкон</li>
+                            <li class="card__item">Wi-fi</li>
+                            <li class="card__item">Вся посуда</li>
+                        </ul>
+                        <ul class="card__list">
+                            <li class="card__item">Два комплекта полотенец</li>
+                            <li class="card__item">Всегда качественное постельное белье</li>
+                            <li class="card__item">Большой, комфортный раздвижной диван</li>
+                            <li class="card__item">Спальное место 1600х2000 (1 спальное место, размещение до 2-х человек, возможно докомплектация раскладушкой или большим надувным матрацем).</li>
+                        </ul>
+                    </div>
+                    <div class="card__love">
+                        <h4 class="card__love-text">Все сделано с любовью для Вас!</h4>
+                        <a href="./apart.html" class="crad__love-btn btn">Смотреть все квартиры</a>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- 2nd section -->
         <section class="about">
             <div class="container">
@@ -543,5 +495,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <!-- Slick slider -->
     <script src="libs/slick/slick.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

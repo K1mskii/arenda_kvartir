@@ -32,6 +32,10 @@
     cursor: pointer;
 }
 
+.btn:hover {
+    background: linear-gradient(90deg,#dd6a00,#f99806);
+}
+
 .title {
     font-family: 'Montserrat-ExtraBold';
 	font-weight: 800;
